@@ -1,0 +1,16 @@
+<h1> Listing rooms</h1>
+
+<table>
+ <tr>
+  <th>Title</th>
+  <th>Text</th>
+ </tr>
+<% @rooms.each do |room| %>
+<tr>
+ <td><%= room.title %></td>
+ <td><%= room.text %></td>
+</tr>
+<% end %>
+</table>
+
+<%= link_to 'New room', new_room_path %>
